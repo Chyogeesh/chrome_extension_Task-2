@@ -1,0 +1,5 @@
+my-extension/
+|--- manifest.json
+|--- popup.html
+|--- popup.css
+|--- popup.js
