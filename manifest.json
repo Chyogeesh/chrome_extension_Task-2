@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "LinkedIn Data Extractor",
+  "version": "1.0",
+  "description": "Extracts data from LinkedIn profiles and posts to API",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
